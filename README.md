@@ -1,14 +1,14 @@
-# Udacity Deep Reinforcement Learning Nanodegree Project: Navigation
+# Udacity Deep Reinforcement Learning Nanodegree Project 1: Navigation
 
 This is a project that uses Deep Q-Networks to train an agent to capture yellow bananas and avoid
 blue bananas through deep reinforcement learning in a Unity ML-Agents environment.
 
-The steps below will describe how to get this running on Linux/MacOS:
+The steps below will describe how to get this running on MacOS:
 
 ## 1. Clone the repo
 
 ```
-$ git clone https://github.com/aweeraman/deep-q-networks-navigation
+$ git clone https://github.com/aweeraman/deep-q-networks-navigation.git
 ```
 
 ## 2. Install Python & dependencies
