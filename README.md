@@ -116,9 +116,9 @@ The action space for the agent consists of the following four possible actions:
 * 2 - turn left
 * 3 - turn right
 
-The agent must collect a reward of +13 or more to solve the problem.
+The agent must collect a reward of +13 or more in over 100 consecutive episodes to solve the problem.
 
-# Troubleshooting
+# Troubleshooting Tips
 
 If you run into an error such as the following when training the agent:
 
