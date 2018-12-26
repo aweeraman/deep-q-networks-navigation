@@ -36,6 +36,7 @@ To run the pre-trained agent, execute the following:
 
 ```
 $ python bananas.py --run
+(drltest1) sendai:bananas anuradha$ python bananas.py --run
 Mono path[0] = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/Resources/Data/Managed'
 Mono config path = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/MonoBleedingEdge/etc'
 INFO:unityagents:
@@ -64,14 +65,13 @@ States look like: [1.         0.         0.         0.         0.84408134 0.
  0.         1.         0.         0.         0.31969345 0.
  0.        ]
 States have length: 37
-Score: 15.0
+Score: 14.0
 ```
 
 To customize hyperparameters and train the agent, execute the following:
 
 ```
 $ python bananas.py --train
-(drl) sendai:bananas anuradha$ python bananas.py --train
 Mono path[0] = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/Resources/Data/Managed'
 Mono config path = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/MonoBleedingEdge/etc'
 INFO:unityagents:
@@ -97,12 +97,26 @@ Episode 200	Average Score: 4.03
 Episode 300	Average Score: 7.21
 Episode 400	Average Score: 9.00
 Episode 500	Average Score: 11.44
-Episode 600	Average Score: 13.50
-Episode 700	Average Score: 15.07
-Episode 800	Average Score: 15.16
-Episode 900	Average Score: 15.90
-Episode 1000	Average Score: 16.83
+Episode 574	Average Score: 13.02
+Environment solved in 474 episodes!	Average Score: 13.02
 ```
+
+# Environment details
+
+The state space has 37 dimensions and consists of:
+* the agent's velocity
+* objects in the agents forward field of view
+
+The agent receives a reward of +1 for a yellow banana, and -1 for blue banana. The goal is therefore to
+maximize the collection of yellow bananas while minimizing / avoiding blue ones.
+
+The action space for the agent consists of the following four possible actions:
+* 0 - walk forward
+* 1 - walk backward
+* 2 - turn left
+* 3 - turn right
+
+The agent must collect a reward of +13 or more to solve the problem.
 
 # Troubleshooting
 

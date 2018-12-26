@@ -9,7 +9,7 @@ from collections import deque
 import matplotlib.pyplot as plt
 
 # https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/Deep_Q_Network_Solution.ipynb
-def dqn(n_episodes=1000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
+def dqn(n_episodes=1000, max_t=750, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
     """Deep Q-Learning.
 
     Params
@@ -45,7 +45,7 @@ def dqn(n_episodes=1000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.99
         if i_episode % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_window)))
             torch.save(agent.qnetwork_local.state_dict(), 'weights.pth')
-        if np.mean(scores_window)>=200.0:
+        if np.mean(scores_window)>=13.0:  # consider done when the target of 13 is reached
             print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(i_episode-100, np.mean(scores_window)))
             torch.save(agent.qnetwork_local.state_dict(), 'weights.pth')
             break
