@@ -9,7 +9,7 @@ from collections import deque
 import matplotlib.pyplot as plt
 
 # https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/Deep_Q_Network_Solution.ipynb
-def dqn(n_episodes=1000, max_t=750, eps_start=1.0, eps_end=0.01, eps_decay=0.995):
+def dqn(n_episodes=1000, max_t=750, eps_start=1.0, eps_end=0.01, eps_decay=0.9):
     """Deep Q-Learning.
 
     Params
