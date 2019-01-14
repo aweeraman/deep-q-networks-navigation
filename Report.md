@@ -22,16 +22,16 @@ sequence and smooth changes in the data distribution.
 
 ## Model architecture and hyperparameters
 
-Fully connected layer 1: Input 37 (state space), Output 32, RELU
-Fully connected layer 2: Input 32, Output 32, RELU
-Fully connected layer 3: Input 32, Output 4 (action space)
+* Fully connected layer 1: Input 37 (state space), Output 32, RELU
+* Fully connected layer 2: Input 32, Output 32, RELU
+* Fully connected layer 3: Input 32, Output 4 (action space)
 
 The hyperparameters for tweaking and optimizing the learning algorithm were:
 
-max_t (750): maximum number of timesteps per episode
-eps_start (1.0): starting value of epsilon, for epsilon-greedy action selection
-eps_end (0.01): minimum value of epsilon
-eps_decay (0.9): multiplacative factor (per episode) for decreasing epsilon
+* max_t (750): maximum number of timesteps per episode
+* eps_start (1.0): starting value of epsilon, for epsilon-greedy action selection
+* eps_end (0.01): minimum value of epsilon
+* eps_decay (0.9): multiplacative factor (per episode) for decreasing epsilon
 
 ## Plot of rewards
 
