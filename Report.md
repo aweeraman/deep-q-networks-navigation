@@ -22,8 +22,8 @@ sequence and smooth changes in the data distribution.
 
 ## Model architecture and hyperparameters
 
-* Fully connected layer 1: Input 37 (state space), Output 32, RELU
-* Fully connected layer 2: Input 32, Output 32, RELU
+* Fully connected layer 1: Input 37 (state space), Output 32, RELU activation
+* Fully connected layer 2: Input 32, Output 32, RELU activation
 * Fully connected layer 3: Input 32, Output 4 (action space)
 
 The hyperparameters for tweaking and optimizing the learning algorithm were:
