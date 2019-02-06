@@ -3,6 +3,8 @@
 This is a project that uses Deep Q-Networks to train an agent to capture yellow bananas and avoid
 blue bananas through deep reinforcement learning in a Unity ML-Agents environment.
 
+![Running Agent](https://raw.githubusercontent.com/aweeraman/deep-q-networks-navigation/master/images/running_agent.png)
+
 The steps below will describe how to get this running on MacOS:
 
 ## 1. Clone the repo
