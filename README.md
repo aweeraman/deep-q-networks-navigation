@@ -38,36 +38,6 @@ To run the pre-trained agent, execute the following:
 
 ```
 $ python bananas.py --run
-(drltest1) sendai:bananas anuradha$ python bananas.py --run
-Mono path[0] = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/Resources/Data/Managed'
-Mono config path = '/Users/anuradha/ninsei/udacity/bananas/Banana.app/Contents/MonoBleedingEdge/etc'
-INFO:unityagents:
-'Academy' started successfully!
-Unity Academy name: Academy
-        Number of Brains: 1
-        Number of External Brains : 1
-        Lesson number : 0
-        Reset Parameters :
-
-Unity brain name: BananaBrain
-        Number of Visual Observations (per agent): 0
-        Vector Observation space type: continuous
-        Vector Observation space size (per agent): 37
-        Number of stacked Vector Observation: 1
-        Vector Action space type: discrete
-        Vector Action space size (per agent): 4
-        Vector Action descriptions: , , ,
-Number of agents: 1
-Number of actions: 4
-States look like: [1.         0.         0.         0.         0.84408134 0.
- 0.         1.         0.         0.0748472  0.         1.
- 0.         0.         0.25755    1.         0.         0.
- 0.         0.74177343 0.         1.         0.         0.
- 0.25854847 0.         0.         1.         0.         0.09355672
- 0.         1.         0.         0.         0.31969345 0.
- 0.        ]
-States have length: 37
-Score: 14.0
 ```
 
 To customize hyperparameters and train the agent, execute the following:
